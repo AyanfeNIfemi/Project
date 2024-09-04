@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="info">
+        <h1>FILL THE FORM BELLOW </h1>
+        <P>NOTE:Password must contain
+            <ul>
+                <li>Capital letter (A,S,D)</li>
+                <li>Small Letter (a,w,e)</li>
+                <li>Symbols (@,#,*)</li>
+                <li>Number (1,2,3)</li>
+            </ul>
+        </P>
+    </div>
+    <fieldset style="align-items: center; justify-content: center;">
+        <!-- <legend>FORM</legend> -->
+        <form>
+            <label for="name">NAME:
+                <input type="text" required>
+            </label><br><br>
+            <label for="password">PASSWORD:
+                <input type="password" required>
+                <progress value="7" max="10"></progress>
+            </label><br><br>
+            <label for="email">E-MAIL:
+                <input type="email" required>
+            </label><br><br>
+            <label for="phonenumber">PHONE Number
+                <input type="">
+            </label>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </fieldset>
+</body>
+
+</html>

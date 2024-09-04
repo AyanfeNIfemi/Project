@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .wheel-container{
+            position: relative;
+        }
+        .wheel{
+            background: grey;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: ips solid #ffff;
+            position: relative;
+            overflow: hidden;
+            transform-origin: center;
+            animation-name: spin;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+        }
+
+        .lwp{
+            display: flex;
+            float: left;
+            background-color: red;
+            width: 50%;
+            height: 100px;
+        }
+
+        .rwp{
+            display: flex;
+            float: right;
+            background-color: black;
+            width: 50%;
+            height: 100px;
+        }
+
+        .lwb{
+            display: flex;
+            float: left;
+            background-color: purple;
+            width: 50%;
+            height: 100px;
+        }
+
+        .rwb{
+            display: flex;
+            float: right;
+            background-color: green;
+            width: 50%;
+            height: 100px;
+        }
+
+        @keyframes spin {
+            from{
+                transform: rotate(0deg);
+            }to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wheel-container">
+        <div class="wheel">
+            <div class="wheel-top">
+                <div class="lwp"></div>
+                <div class="rwp"></div>
+            </div>
+            <div class="wheel-bottom">
+                <div class="lwb"></div>
+                <div class="rwb"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

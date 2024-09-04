@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    min-height: 90vh;
+    background-image: url(./images/images.3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+nav {
+    z-index: 2;
+    background-color: rgb(54, 49, 49);
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    color: white;
+    padding: 2%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+header P {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    color: rgb(6, 5, 5);
+    text-decoration: none;
+    padding: 3%;
+}
+
+nav a:hover {
+    color: red;
+}
+
+nav i {
+    padding: 5%;
+}
+.ab {
+    color: white;
+    padding: 10%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    transform: translateY(50%);
+}
+
+.story {
+    width: 100%;
+    background-color: white;
+}
+
+.story h4 {
+    color: red;
+    font-style: oblique;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10%;
+}
+
+.story h1 {
+    color: black;
+    text-align: center;
+    transform: translateY(-390%);
+}
+
+.story p {
+    margin-left: 300px;
+    color: rgb(134, 133, 131);
+    width: 100ch;
+    transform: translateY(-90%);
+}
+
+.video {
+    background-image: url(./image/istockphoto-1474203885-170667a.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.video h4 {
+    min-height: 90vh;
+    text-align: center;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    padding: 15%;
+}
+
+.video h1 {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    transform: translateY(-600%);
+}
+
+.circle {
+    position: absolute;
+    top: 220%;
+    left: 46%;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px 100px 100px 100px;
+    background-color: white;
+}
+
+.tri {
+    width: 0;
+    height: 0;
+    transform: translateY(-500%);
+    /* margin-top: -20%; */
+    /* margin-bottom: 50%; */
+    margin-left: 48.5%;
+    border-left: 50px solid black;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+}
+
+.describe {
+    background-color: rgb(239, 235, 227);
+    width: 100%;
+}
+.recipe {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 70vh;
+}
+.recipe > .info{
+    align-items: center; 
+    padding: 10px;
+}
+.recipe > .info h4{
+    margin-top: 15%;
+    margin-left: 180px;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    align-items: center;
+}
+.recipe > .info h1{
+    color: black;
+    font-weight: 600;
+    font-size: 3rem;font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 150px;
+    margin-top: 5px;
+}
+.recipe > .info p{
+    color: rgba(45, 45, 44, 0.607);
+    width: 50ch;
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+.recipe > .info-pic{
+    width: 40%;
+    height: 60vh;
+    margin: 50px;
+    /* padding: 10px; */
+    /* background-color: aqua; */
+    border-radius: 20px;
+    overflow: hidden;
+}
+.info-pic > img{
+    width: 100%;
+    height: 100%;
+    transition: 1s ease-in-out;
+    border-radius: 20px;
+}
+.info-pic > img:hover{
+    scale: 1.1;
+}
+.restaurant {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 70vh;
+}
+.restaurant > .rest-pic{
+    width: 40%;
+    height: 60vh;
+    border-radius: 20px;
+    overflow: hidden;
+    /* margin: 30px; */
+    /* padding: 10px; */
+}
+.rest-pic > img{
+    width: 100%;
+    height: 100%;
+    transition: 1s ease-in-out;
+    border-radius: 20px;
+}
+.rest-pic > img:hover{
+    scale: 1.1;
+}
+.restaurant > .rest {
+    align-items: center;
+    /* margin: 50%;  */
+    /* padding: 10px; */
+}
+.restaurant > .rest h4{
+    margin-top: 5%;
+    margin-left: 40%;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    align-items: center;
+}
+.restaurant > .rest h1{
+    color: black;
+    font-weight: 600;
+    font-size: 3rem;font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 25%;
+    margin-top: 5px;
+}
+.restaurant > .rest p{
+    color: rgba(45, 45, 44, 0.607);
+    width: 50ch;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    margin-left: 10%;
+}
+.chefs{
+    gap: 40px;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+}
+.profile{
+    margin-top: 10%;
+    margin-left: 15px;
+    padding: 2%;
+    width: 350px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.profile >.chef-pic{
+    margin-top: -40%;
+    margin-left: 20%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid red;
+}
+.chef-pic >img{
+    width: 100%;
+    height: 100%;
+    transition: 2s ease-in-out;
+    border-radius: 20px;
+}
+.chef-pic >img:hover{
+    scale: 1.1;
+}
+.sub{
+    align-items: center;
+}
+.sub> .peter{
+    padding: 2%;
+    text-decoration: none;
+    margin-left: 80px;
+    /* margin-top: -70px; */
+}
+.sub> .peter:hover{
+    color: red;
+}
+.sub >h3{
+    margin-left: 90px;
+}
+.sub >p:first-child{
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.sub >p:last-child{
+    font-size: 1rem;
+    font-weight: 300;
+}
+/*  */
+.profile:nth-child(2){
+    margin-top: 10%;
+    margin-left: 50px;
+    padding: 2%;
+    width: 350px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.profile:nth-child(2) >.chef-pic{
+    margin-top: -40%;
+    margin-left: 20%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid red;
+}
+.chef-pic >img{
+    width: 100%;
+    height: 100%;
+    transition: 2s ease-in-out;
+    border-radius: 20px;
+}
+.chef-pic >img:hover{
+    scale: 1.1;
+}
+.sub{
+    align-items: center;
+}
+.sub> .peter{
+    padding: 2%;
+    text-decoration: none;
+    margin-left: 80px;
+    /* margin-top: -70px; */
+}
+.sub> .peter:hover{
+    color: red;
+}
+.sub >h3{
+    margin-left: 90px;
+}
+.sub >p:first-child{
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.sub >p:last-child{
+    font-size: 1rem;
+    font-weight: 300;
+}
+/*  */
+.profile:nth-child(3){
+    margin-top: 10%;
+    margin-left: 50px;
+    padding: 2%;
+    width: 350px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.profile:nth-child(3) >.chef-pic{
+    margin-top: -40%;
+    margin-left: 20%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid red;
+}
+.chef-pic >img{
+    width: 100%;
+    height: 100%;
+    transition: 2s ease-in-out;
+    border-radius: 20px;
+}
+.chef-pic >img:hover{
+    scale: 1.1;
+}
+.sub{
+    align-items: center;
+}
+.sub> .peter{
+    padding: 2%;
+    text-decoration: none;
+    margin-left: 80px;
+    /* margin-top: -70px; */
+}
+.sub> .peter:hover{
+    color: red;
+}
+.sub >h3{
+    margin-left: 100px;
+}
+.sub >p:first-child{
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.sub >p:last-child{
+    font-size: 1rem;
+    font-weight: 300;
+}
+main{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(40, 39, 39);
+}
+span >h1{
+    color: rgb(237, 230, 230);
+}
+/*  */
+.end{
+    background-color: rgb(48, 48, 48);
+    height: 80vh;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.end1:first-child{
+    margin-top: 3%; 
+    width: 30%;
+}
+.end1 >h1{
+    color: white;
+    font-size: 1.5rem;
+}
+.tt >h1{
+    margin-top: 20%;
+    color: white;
+    font-size: 1.5rem;
+}
+.tt >p{
+    margin-top: 20px;
+    color: rgb(191, 187, 187);
+}
+.end1:nth-child(2){
+    /* padding: 2%; */
+    width: 100%;
+    margin-top: 3%;
+}
+.end1:nth-child(2) >.pp >h1{
+    color: white;
+}
+.end1:nth-child(2) >.pp >.s{
+    color: red;
+    text-decoration: none;
+    margin-top: 30px;
+}
+

@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'josefin Sans' sans-serif;
+}
+
+/* HEADING STYLING */
+
+.heading{
+  width: 100%;
+  height: 15vh;
+  background: rgb(27, 25, 25);
+  position: sticky;
+  top: 0;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo{
+  color: white;
+  font-size: 28px;
+}
+
+.logo span{
+  color: #ea1538;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: all ease 0.3s;
+}
+
+nav ul li a:hover{
+  color: #ea1538;
+}
+
+nav ul.dropdown {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: #22438C;
+  box-shadow: 0 20px 45px #000020;
+  opacity: 0;
+  z-index: -999;
+  transition: all ease 0.5s;
+}
+
+ul li:hover ul.dropdown{
+  z-index: 99;
+  opacity: 1;
+  margin-top: 0;
+  padding: 15px;
+}
+
+ul li:hover ul.dropdown li{
+  margin: 0;
+  /* padding: 15px;
+  line-height: 25px; */
+  width: 100%;
+}
+
+ul li:hover ul.dropdown li a{
+  padding: 1px 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+button{
+  border: none;
+  background: #ea1538;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: .4s;
+}
+
+button:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Home Styling */
+
+#home{
+  width: 100%;
+  background: url(./Image/lake-4541454_1280.jpg);
+  height: 90vh;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  padding: 50px 40px;
+}

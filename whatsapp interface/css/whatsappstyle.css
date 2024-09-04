@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.whatsapp-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+/* CHAT BOX STYLING START */
+.chat-box {
+  width: 30%;
+  background-color: azure;
+}
+.nav-bar {
+  height: 12vh;
+  background-color: lightblue;
+}
+.nav-bar > header {
+  padding: 5px;
+}
+.nav-box {
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-box > .nav-profile > img {
+  height: 40px;
+  border-radius: 25px;
+}
+.nav-icons {
+  display: flex;
+  gap: 15px;
+  margin-right: 45px;
+}
+.search-bar{
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(209, 238, 238);
+}
+.search-bar > i{
+    margin-left: 35px;
+}
+.search-bar > input{
+    width: 55%;
+    margin-left: 35px;
+    margin-top: 5px;
+}
+
+/* MESSAGE CONTAINER STYLING */
+
+.message-container{
+    width: 100%;
+    height: 75vh;
+    background-color: rgb(107, 102, 102);
+}
+.individual-chat-box{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    justify-content: space-around;
+    background-color: whitesmoke;
+}
+.individual-chat-box> .display-picture >img{
+  position: relative;
+    height: 60px;
+    border-radius: 40px;
+}
+.top-chat-display{
+    display: flex;
+    justify-content: space-between;
+}
+/* .top-chat-display>.chat-contact-save{
+  margin-left: -6px;
+} */
+.chat-display{
+    line-height: 30px;
+}
+
+
+/* SIDE BAR STYLING START*/
+.side-bar {
+  background-color: rgb(243, 243, 243);
+  width: 70%;
+  align-content: center;
+}
+.side-bar-info {
+  justify-content: space-around;
+}
+.side-bar-info > .info-image {
+  margin-left: 20%;
+}
+.side-bar-info > .info-image2>img {
+  border-radius: 5px;
+}
+.side-bar-info > .info-text {
+  padding: 1%;
+  text-align: center;
+}
+.side-bar-info > .info-text > h1 {
+  font-size: 3rem;
+  font-family: monospace;
+  font-weight: 200;
+  color: rgb(124, 124, 122);
+}
+.side-bar-info > .info-text > .inf0-text-para1,
+.inf0-text-para2 {
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 200;
+  color: rgb(124, 124, 122);
+  margin-top: 15px;
+}
+/* SIDE BAR STYLING END */

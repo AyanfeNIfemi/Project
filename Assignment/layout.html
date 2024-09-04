@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body{
+            width: 100%;
+        }
+        header{
+            background-color: grey;
+            height: 20vh;
+            font-size: 4rem;
+            font-weight: 700;
+            text-align: center;
+        }
+        .flex{
+            /* float: left; */
+            display: flex;
+            align-items: center;
+            background-color: beige;
+            height: 35vh;
+        }
+        .flex-left{
+            width: 30%;
+            height: 100%;
+            background-color: rgb(69, 146, 146);
+        }
+        .flex-left> a{
+            margin-left: 15px;
+            margin-top: 20px;
+        }
+        .flex-right{
+            width: 70%;
+            height: 100%;
+            background-color: rgb(19, 161, 0);
+        }
+        .flex-right>h1,p{
+            margin-left: 8%;
+        }
+        footer{
+            background-color: grey;
+            height: 20vh;
+            font-size: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>Cities</header>
+        <div class="flex">
+            <div class="flex-left">
+                <a href="#">london</a><br>
+                <a href="#">Paris</a><br>
+                <a href="#">Tokyo</a>
+            </div>
+            <div class="flex-right">
+                <h1>London</h1>
+                <p>
+                    London is the captital city of England. It is the most populous city in the united-kingdom, <br>
+                    with a metropolititan area of over 13 million inhabitants
+                </p>
+                <p>
+                    Standing on the River Thames,London has been a major settlement for two millennia,its <br>
+                    history going back to its founding by Romans,who named it londinium.
+                </p>
+            </div>
+        </div>
+        <footer>
+            Footer
+        </footer>
+    </div>
+</body>
+
+</html>

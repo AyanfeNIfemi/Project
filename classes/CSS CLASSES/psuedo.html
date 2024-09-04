@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(70, 68, 68);
+        }
+        body h1{
+            font-size: 3rem;
+            text-align: center;
+            text-decoration: underline;
+        }
+        form{
+            padding: 5%;
+        }
+        .surname{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.7rem;
+            font-weight: 800;
+        }
+        .surname>input{
+            background-color: bisque;
+            width: 140px;
+            height: 20px;
+        }
+        .surname>input:hover{
+            color: black;
+            background-color: rgb(168, 108, 35);
+            width: 150px;
+        }
+        .first-name{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.7rem;
+            font-weight: 800;
+        }
+        .first-name>input{
+            background-color: bisque;
+            width: 140px;
+            height: 20px;
+        }
+        .first-name>input:hover{
+            color: black;
+            background-color: rgb(168, 108, 35);
+            width: 150px;
+        }
+        .other-name{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.7rem;
+            font-weight: 800;
+        }
+        .other-name>input{
+            background-color: bisque;
+            width: 140px;
+            height: 20px;
+        }
+        .other-name>input:hover{
+            color: black;
+            background-color: rgb(168, 108, 35);
+            width: 150px;
+        }
+        .tel{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.7rem;
+            font-weight: 800;
+        }
+        .tel>input{
+            background-color: bisque;
+            width: 140px;
+            height: 20px;
+        }
+        .tel>input:hover{
+            color: black;
+            background-color: rgb(168, 108, 35);
+            width: 150px;
+        }
+        .dob{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.7rem;
+            font-weight: 800;
+        }
+        .dob>input{
+            background-color: bisque;
+            width: 140px;
+            height: 20px;
+        }
+        .dob>input:hover{
+            color: black;
+            background-color: rgb(168, 108, 35);
+            width: 150px;
+        }
+        .add{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.7rem;
+            font-weight: 800;
+        }
+        .add>input{
+            background-color: bisque;
+            width: 140px;
+            height: 20px;
+        }
+        .add>input:hover{
+            color: black;
+            background-color: rgb(168, 108, 35);
+            width: 150px;
+        }
+        textarea:hover{
+            background-color: aqua;
+            width: 350px;
+            height: 200px;
+        }
+        .password{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.7rem;
+            font-weight: 800;
+        }
+        .password>input{
+            background-color: bisque;
+            width: 140px;
+            height: 20px;
+        }
+        .password>input:hover{
+            color: black;
+            background-color: rgb(168, 108, 35);
+            width: 150px;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+            background-color: aquamarine;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        button:hover{
+            width: 100px;
+            height: 50px;
+            color: aquamarine;
+            background-color: black;
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personal Information</h1>
+    <hr>
+    <form>
+        <label for="name" class="surname">Surname
+            <input type="text" placeholder="Osunniran">
+        </label><br><br>
+        <label for="name" class="first-name">First-Name
+            <input type="text" placeholder="Inioluwa">
+        </label><br><br>
+        <label for="name" class="other-name">Other-Name
+            <input type="text" placeholder="Emmanuel">
+        </label><br><br>
+        <label for="Telephone" class="tel">Phone Number
+            <input type="tel" placeholder="09172456232">
+        </label><br><br>
+        <label for="dob" class="dob">Date Of Birth
+            <input type="date">
+        </label><br><br>
+        <label for="address" class="add">Address
+            <input type="text" placeholder="Osogbo">
+        </label><br><br>
+        <label for="password" class="password">Password
+            <input type="password" placeholder="Password">
+        </label><br><br>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea><br><br>
+        <button>SEND</button>
+        <ol type="i">
+            <li>grape</li>
+            <li>mango</li>
+            <li>orange</li>
+            <li>cherry</li>
+            <li>cashew</li>
+        </ol>
+    </form>
+    <P>AYANFECODE</P>
+    <P id="demo"></P>
+    <script>
+        document.getElementById("demo").innerHTML="Hello JavaScript"
+    </script>
+</body>
+
+</html>

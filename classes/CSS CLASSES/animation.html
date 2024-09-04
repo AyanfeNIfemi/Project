@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .rotate{
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+        }
+        .rotate:hover{
+            /* transform: rotate(90deg); */
+            /* transform: translate(50px, 70px); */
+            /* transform: scale(1.1); */
+            /* transform: scaleX(2); */
+            transform: scaleY(2);
+        }
+        .tra{
+            background: blue;
+            width: 100px;
+            height: 100px;
+            transition: width 4s ease-in;
+        }
+        .tra:hover{
+            width: 300px;
+        }
+
+        .animation{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            animation-name: anime;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+        }
+
+        @keyframes anime {
+            from{
+                transform: 90deg;
+                float: right;
+            }to{
+                transform: 180deg;
+                float: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="rotate">
+        2D Animations
+    </div>
+    <div class="tra"></div>
+    <div class="animation"></div>
+</body>
+</html>
