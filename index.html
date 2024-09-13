@@ -1,12 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my first code</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            height: 60px;
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .links-container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+        nav ul a{
+            height: 100%;
+            padding: 0 50px;
+            align-items: center;
+            text-decoration: none;
+            color: gray;
+        }
+        nav a:hover {
+            color: green;
+        }
+        nav .home-link {
+            margin-right: auto;
+        }
+
+        #sidebar-active {
+            display: none;
+        }
+
+        .open-sidebar-active,
+        .close-sidebar-active {
+            display: none;
+        }
+
+        @media screen and (max-width:320px) {
+            .links-container {
+                flex-direction: column;
+                align-items: flex-start;
+                position: fixed;
+                top: 0;
+                right: -100%;
+                z-index: 10;
+                width: 320px;
+                background-color: blanchedalmond;
+                box-shadow: 5px 0 5px rgba(0, 0, 0, 0.25);
+                transition: 1s ease-out;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul a{
+                box-sizing: border-box;
+                height: auto;
+                width: 100%;
+                padding: 20px 30px;
+                justify-content: flex-start;
+            }
+            .open-sidebar-active,
+            .close-sidebar-active {
+                display: block;
+                padding: 20px;
+            }
+
+            .open-sidebar-active {
+                padding-left: 80%;
+            }
+
+            #sidebar-active:checked~.links-container {
+                right: -10%;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>My first heading</h1>
+    <nav>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-active">
+            <i class="fas fa-bars"></i>
+        </label>
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-active">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </label>
+            <ul class="home-links">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#" class="me-links">Me.</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Client</a>
+                <a href="#">Contact</a>
+            </ul>
+        </div>
+    </nav>
+    <!-- <h1>My first heading</h1>
     <p>My frst paragraph</p>
     <a href="http//">Happy Coding</a><br>
     <img src="./images/1698161035454.jpg" alt="BF and GF">
@@ -16,5 +130,10 @@
     <h4>I love coding</h4>
     <h5>I love coding</h5>
     <h6>I love coding</h6>
+
+    <div class="ta">
+        <input type="radio">
+    </div> -->
 </body>
+
 </html>
